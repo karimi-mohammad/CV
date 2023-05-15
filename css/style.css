@@ -1,0 +1,193 @@
+/* variables / configs */
+:root {
+    /* --main-color: #fbd22b;
+    --second-color: #555557;
+    --third-color: white; */
+    --main-color: #fca311;
+    --second-color: #14213d;
+    --third-color: white;
+    /* --main-color: #F19953;
+    --second-color: #2660A4;
+    --third-color: white; */
+
+}
+
+/* fonts */
+@font-face {
+    font-family: "Shabnam";
+    src: url("../source/fonts/shabnam-font-v5.0.1/Farsi-Digits/Shabnam-Medium-FD.ttf") format('truetype');
+}
+
+* {
+    font-family: Shabnam;
+}
+
+/* styles */
+#profile {
+    padding-top: 4%;
+    background-color: var(--second-color);
+    width: 100%;
+    height: 205px;
+    z-index: 1;
+    position: relative;
+
+}
+
+#prof-ico {
+    width: 100%;
+    height: auto;
+    margin-right: 15%;
+
+}
+
+#name {
+    padding-right: 2%;
+    padding-bottom: 0%;
+    color: white;
+}
+
+#heading {
+    border-bottom: 5px solid var(--main-color);
+    margin-right: 0px;
+    margin-left: 0;
+
+}
+
+#side {
+    min-height: 115px;
+    background: var(--main-color);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+    font-size: 12px;
+    margin: 0px;
+    margin-bottom: 65px;
+}
+
+#side>span:first-child {
+    background-color: var(--second-color);
+    height: fit-content;
+    position: relative;
+    top: -6px;
+    padding-bottom: 12px;
+    border-radius: 0px 0px 20px 20px;
+    color: white;
+    font-size: 15px;
+    box-shadow: 0px 3px 40px -3px black;
+    z-index: 0;
+}
+
+#side>.info:last-child {
+    padding-bottom: 40px;
+}
+
+.icon {
+    height: auto;
+    width: 30px;
+}
+
+.para {
+    font-size: 15px;
+}
+
+.titr {
+    font-size: 22px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    /* margin-right: 35%; */
+    padding-right: 29% !important;
+    font-size: 15px;
+    margin-top: 2% !important;
+}
+
+.info>span:first-child {
+    margin-left: 5%;
+    width: 40px;
+}
+
+.info>span:first-child>i {
+    font-size: 213%;
+
+    margin-left: auto !important;
+    margin-left: auto !important;
+}
+
+
+
+.info p {
+    width: fit-content;
+    display: inline;
+}
+
+
+.info_material span:first-child {
+    color: var(--main-color);
+}
+
+.info_material span:last-child {
+    font-size: 12px;
+    color: #c8c8c8;
+}
+
+#sidebar {
+    background-color: var(--second-color);
+    padding: 0;
+}
+
+#skills {
+    color: var(--bs-body-color);
+}
+
+.section {
+    display: flex;
+}
+
+#skills>.section>div:first-child {
+    background-color: var(--third-color);
+    width: 60%;
+    height: 45px;
+    /* 22.5 */
+    position: relative;
+
+}
+
+#skills>.section>div:nth-of-type(2) {
+
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 100px 45px 0;
+    border-color: transparent var(--third-color) transparent transparent;
+    transform: rotate(0deg);
+}
+
+#skills>.section>div:first-child>.circle {
+    width: 90px;
+    height: 90px;
+    /* 45 */
+    background-color: white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+}
+
+#skills>.section>div:first-child>.circle>i {
+    width: 100%;
+    text-align: center;
+    font-size: 55px;
+    position: relative;
+    transform: translate(-0%, -50%);
+    top: 50%;
+}
+
+#skills>.section>div:first-child>p {
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    position: relative;
+    transform: translate(-0%, -50%);
+    top: 50%;
+}
