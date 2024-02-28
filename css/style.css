@@ -70,13 +70,14 @@
     background-color: var(--second-color);
     height: fit-content;
     position: relative;
-    top: -6px;
+    top: -8px;
     padding-bottom: 12px;
     border-radius: 0px 0px 20px 20px;
     color: white;
     font-size: 20px;
     box-shadow: 0px 3px 40px -3px black;
     z-index: 0;
+    
 }
 
 #side>.info:last-child {
@@ -123,7 +124,7 @@
 
 .info_material span:last-child {
     /* font-size: 12px; */
-   font-size:   var(--bs-body-font-size);
+    font-size: var(--bs-body-font-size);
     color: #c8c8c8;
 }
 
@@ -138,18 +139,16 @@
 
 .section {
     display: flex;
-}
-
-#skills>.section>div:first-child {
+    flex-direction: row;
     background-color: var(--third-color);
     width: 60%;
     height: 45px;
-    /* 22.5 */
-    position: relative;
-
+    padding-right: 20px;
 }
 
-.section>div:nth-of-type(2) {
+
+
+.triangle {
 
     width: 0px;
     height: 0px;
@@ -159,27 +158,24 @@
     transform: rotate(0deg);
 }
 
-.section>div:first-child>.circle {
+.section .circle {
     width: 90px;
     height: 90px;
-    /* 45 */
     background-color: white;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
+    transform: scale(1.25) translateY(-20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#skills>.section>div:first-child>.circle>i {
+.section>.circle>i {
     width: 100%;
     text-align: center;
     font-size: 55px;
-    position: relative;
-    transform: translate(-0%, -50%);
-    top: 50%;
+
 }
 
-#skills>.section>div:first-child>p {
-    width: 100%;
+.section>p {
     text-align: center;
     font-size: 25px;
     margin-right: 25px;
@@ -217,9 +213,11 @@
     background-color: #f7f7f7;
     ;
 }
-.property-item{
+
+.property-item {
     padding-top: 4%
 }
+
 .property-item .icon {
     background-color: var(--gray-color);
     font-size: 28px;
@@ -231,24 +229,33 @@
     align-items: center;
     justify-content: center;
 }
-.row{
+.property-item .col-1{
+    margin-left: 1%;
+}
+.row {
     margin-left: 0 !important;
     margin-right: 0 !important;
+    /* margin-bottom: 2%; */
 }
-.project{
+
+.project {
     padding-top: 35px;
 }
-.project-info{
-   color: #7e7e7e;
-   line-height: 34px;
-   
+
+.project-info {
+    color: #7e7e7e;
+    line-height: 34px;
+
 }
-.category{
+
+.category {
     margin-top: 30px;
 }
-.experience-info{
+
+.experience-info {
     direction: ltr;
 }
-.experience{
+
+.experience {
     padding-left: 75px;
 }
